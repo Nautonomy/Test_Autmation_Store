@@ -59,5 +59,5 @@ class TestShopping:
             login_page.fill_login_form_correct()
         assert driver.current_url == checkout_page.url_return(), "Current url is different than expected."
         checkout_page.confirm_order()
-        time.sleep(1)
+        time.sleep(2)
         assert driver.current_url == checkout_success_page.url_return(), "Current url is different than expected."
